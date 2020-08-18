@@ -1,9 +1,16 @@
 {
-    "name": "kindle-fetch",
-    "description": "Converts Kindle E-Books to HTML files ",
-    "main": "main.js",
-    "dependencies": {
-        "osenv": "^0.1.4",
-        "sqlite3": "^3.1.8"
-    }
+  "name": "kindle-fetch",
+  "description": "Converts Kindle E-Books to HTML files ",
+  "main": "main.js",
+  "scripts": {
+    "gotoChrome": "open ~/Library/Application\\ Support/Google/Chrome/Default/databases/https_read.amazon.com_0",
+    "runFetch": "node main.js -f ~/Library/Application\\ Support/Google/Chrome/Default/databases/https_read.amazon.com_0/6"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "osenv": "^0.1.4",
+    "sqlite3": "^5.0.0"
+  }
 }
